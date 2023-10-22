@@ -6,7 +6,7 @@ if shift >= 26:
 
 if shift == 0:
     print(text)
-else:
+elif shift > 0:
     for letter in text:
         if letter == " ":
             output = 32
@@ -22,3 +22,5 @@ else:
                 new_shift = output - 122
                 output = 96 + new_shift
         print(chr(output), end="")
+else:
+    print("Provide a valid shift!")
